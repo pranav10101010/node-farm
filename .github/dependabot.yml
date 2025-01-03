@@ -14,4 +14,3 @@ updates:
           - "major"                  # Include major updates
           - "minor"                  # Include minor updates
           - "patch"                  # Include patch updates
-          - "security"               # Include security updates
