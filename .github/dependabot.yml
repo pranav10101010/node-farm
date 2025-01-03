@@ -11,4 +11,7 @@ updates:
         patterns:
           - "*"                      # Include all dependencies
         update-types:
-          - "all"                    # Apply to all updates (major, minor, patch, and security)
+          - "major"                  # Include major updates
+          - "minor"                  # Include minor updates
+          - "patch"                  # Include patch updates
+          - "security"               # Include security updates
