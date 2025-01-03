@@ -1,8 +1,14 @@
 version: 2
 updates:
-  - package-ecosystem: "npm"    # npm ecosystem for Node.js projects
-    directory: "/"               # Root directory where package.json is located
+  - package-ecosystem: "npm"        # npm ecosystem for Node.js projects
+    directory: "/"                   # Root directory where package.json is located
     schedule:
-      interval: "weekly"          # Check for updates daily
+      interval: "weekly"             # Check for updates weekly
     commit-message:
-      prefix: "fix"              # Prefix for commit messages (e.g., "fix" or "chore")
+      prefix: "fix"                  # Prefix for commit messages (e.g., "fix" or "chore")
+    groups:
+      all-updates:                   # Group name for all updates
+        patterns:
+          - "*"                      # Include all dependencies
+        update-types:
+          - "all"                    # Apply to all updates (major, minor, patch, and security)
